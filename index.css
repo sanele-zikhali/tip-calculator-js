@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+@font-face {
+  font-family: "Titillium";
+  src: url(TitilliumWeb-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+small,
+input,
+::placeholder,
+label,
+button,
+b {
+  font-family: "Titillium";
+}
+body {
+  background: rgb(228, 228, 228);
+}
+.calculator-wrapper {
+  width: 500px;
+  padding: 30px 40px;
+  background: white;
+  box-shadow: 0 2px 3px rgb(126, 126, 126);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-top: 30px;
+}
+.calculator-wrapper label {
+  margin-bottom: 8px !important;
+  opacity: 0.6;
+}
+.people-counter {
+  margin: 0 4px;
+}

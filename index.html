@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="codior.css" />
+  </head>
+  <body>
+    <div class="container flex flex-justify-center flex-align-center">
+      <h1 class="fw-2">Tip Calculator</h1>
+      <p class="mrt-4 fs-2 sub-text">Developed by <b>Sanele Zikhali.</b></p>
+      <div class="calculator-wrapper">
+        <!-- Amount-->
+        <label for="">Bill</label>
+        <div class="in-wrap left-icon c-w-100 mrt-3">
+          <input
+            type="number"
+            id="bill-input"
+            class="icon-input"
+            placeholder="120.00"
+          />
+          <i class="fa fa-dollar-sign input-icon-left" id="input-icon-left"></i>
+        </div>
+        <!-- Divider-->
+        <div class="mrt-4"></div>
+        <div class="mrb-4"></div>
+        <!-- Divider-->
+        <!-- Tip-->
+        <label for="">Tip</label>
+        <div class="in-wrap left-icon c-w-100 mrt-3">
+          <input
+            type="number"
+            id="tip-input"
+            class="icon-input"
+            placeholder="12"
+          />
+          <i class="fa fa-percentage input-icon-left" id="input-icon-left"></i>
+        </div>
+        <hr class="divider" />
+        <div class="flex flex-justify-between flex-align-center">
+          <!-- Number Of People Controller-->
+          <div class="no-people-controller">
+            <p>Number Of Person(s)</p>
+            <div class="buttons-wrapper mrt-3">
+              <button id="increaseBtn" class="bt-rounded bkg-primary">
+                <i class="fa fa-plus"></i>
+              </button>
+              <span id="people-counter" class="people-counter">1</span>
+              <button id="decreaseBtn" class="bt-rounded bkg-primary">
+                <i class="fa fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Total Amount -->
+          <div class="total-bill">
+            <p class="bill-title">Total Bill (Per Person)</p>
+            <h1 class="align-center mrt-3">
+              <i class="fa fa-dollar-sign"></i
+              ><span id="total-bill" class="total-bill fw-2 mrl-3">0</span>
+            </h1>
+          </div>
+        </div>
+        <hr class="divider" />
+        <div class="clear-button mrt-6">
+          <button class="bt bt-med bkg-dark" id="clear-btn">
+            Reset
+            <i class="fa fas fa-history"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="all.min.js"></script>
+  </body>
+</html>
